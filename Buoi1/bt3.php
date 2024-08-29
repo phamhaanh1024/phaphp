@@ -6,53 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phép tính trên hai số</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
 
-    .container {
-        max-width: 700px;
-        width: 100%;
-        margin: 0 auto;
-    }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
 
-    h1 {
-        margin-bottom: 10px;
-    }
+        h1 {
+            margin-bottom: 10px;
+        }
 
-    .form-grid {
-        display: grid;
-        grid-template-columns: 150px auto;
-        grid-gap: 10px;
-        margin-bottom: 20px;
-    }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 150px auto;
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
 
-    .form-grid .full-width {
-        grid-column: span 2;
-    }
+        .form-grid .full-width {
+            grid-column: span 2;
+        }
 
-    .form-grid label {
-        align-self: center;
-    }
+        .form-grid label {
+            align-self: center;
+        }
 
-    .form-grid input[type="number"],
-    .form-grid input[type="submit"] {
-        padding: 5px;
-        width: 100%;
-        box-sizing: border-box;
-    }
+        .form-grid input[type="number"],
+        .form-grid input[type="submit"] {
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-    .form-grid input[type="submit"] {
-        margin-top: 10px;
-    }
+        .form-grid input[type="submit"] {
+            margin-top: 10px;
+        }
 
-    .radio-group {
-        display: flex;
-        gap: 10px;
-    }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+        }
     </style>
 </head>
 
@@ -77,10 +77,20 @@
         </form>
 
         <?php
-        function tinhTong($a, $b) { return $a + $b; }
-        function tinhHieu($a, $b) { return $a - $b; }
-        function tinhTich($a, $b) { return $a * $b; }
-        function tinhThuong($a, $b) {
+        function tinhTong($a, $b)
+        {
+            return $a + $b;
+        }
+        function tinhHieu($a, $b)
+        {
+            return $a - $b;
+        }
+        function tinhTich($a, $b)
+        {
+            return $a * $b;
+        }
+        function tinhThuong($a, $b)
+        {
             if ($b == 0) {
                 return "Không thể chia cho 0";
             } else {
@@ -133,7 +143,8 @@
         </form>
 
         <?php
-        function kiemTraNguyenTo($n) {
+        function kiemTraNguyenTo($n)
+        {
             if ($n <= 1) {
                 return false;
             }
@@ -145,7 +156,8 @@
             return true;
         }
 
-        function kiemTraChan($n) {
+        function kiemTraChan($n)
+        {
             return $n % 2 == 0;
         }
 
